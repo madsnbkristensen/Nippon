@@ -1,0 +1,104 @@
+/* HEADER */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+/* PRODUCTS */
+
+body .maaltids-kasse-slider-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+}
+
+.product {
+  position: relative;
+  overflow: hidden;
+  width: 60%;
+  margin: auto;
+}
+
+
+.product-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 33%;
+}
+
+.product-image {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 35px;
+  width: 80%;
+  margin: 4px;
+}
+
+.product-thumb {
+  height: 300px;
+  width: 250px;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 9vw;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 8;
+  background: none;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+.alle-kasser-btn {
+  padding: 5px 20px;
+  border-radius: 35px;
+  background-color: #413F45;
+  color: white;
+  margin: 40px;
+  font-size: 20px;
+  border: none;
+  box-shadow: 10px black;
+}
