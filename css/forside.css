@@ -1,0 +1,43 @@
+:root {
+    --clr-bg: #f5f5f5;
+    --clr-text: #413F45;
+    --clr-hr: #BD1622;
+    --clr-acc: #E6DCBF;
+
+    --ff-family: 'Raleway', Helvetica, sans-serif;
+
+    --fs-h1: 2rem;
+    --fs-h2: 1.5rem;
+    --fs-body: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-family);
+    background-color: var(--clr-bg);
+}
+
+main {
+    text-align: center;
+}
+
+hr[data-hr] {
+    background-color: var(--clr-hr);
+    width: 90%;
+    
+}
+
+/* ------------- FOOTER -------------- */
+
+img[data-contact-icon] {
+    width: 55px;
+}
+
+img[data-footer-bowl] {
+    width: 150px;
+}
