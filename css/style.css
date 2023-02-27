@@ -2,7 +2,9 @@ html
 {
     margin: 0;
     padding: 0;
-    font-family:;
+    font-family: "raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -11,23 +13,25 @@ body
     padding: 0;
     margin: 0px;
     font-family:;
-    background-color:#e6dcbf;
+    background-color:#f5f5f5;
 }
 
 .logo-img {
     height: 65px;
-    margin-top: 8px;
+    margin-top: 25px;
 }
 
 .top-nav{
-    background-color: #e6dcbf;
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px 200px 25px 25px 25px;
+    grid-template-columns: 250px 250px 250px 250px 250px 35px 35px 35px;
     justify-content: center;
     justify-items: center;
     grid-gap: 10px;
     height: 80px;
     text-align:left;
+    font-family: "raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .top-nav a{
@@ -38,24 +42,36 @@ body
     width: 100px;
 }
 
+.button:hover 
+{background-color: #e6dcbf;}
 
-.top-nav a:hover:not(.active){
-    background-color:  #a11c26;
-}
+
+
 
 .button {
-    color: black;
+    color: #413f45;
     padding: 16px;
     font-size: 16px;
-    border: none;
     height: 80px;
+    border: none;
+    background-color:#f5f5f5 ;
+    font-family: "raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .navbar {
-    background-color:;
-    color: black;
+    color: #413f45;
     padding: 16px;
     font-size: 16px;
     border: none;
-    font-family: ;
+}
+
+.background-img{
+    background-image: url(../img/banner.png);
+    display: block;
+    height: 45vh;
+    margin-top: 3%;
+    box-shadow: gray;
+    filter:opacity(50%)
 }
