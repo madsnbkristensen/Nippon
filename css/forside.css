@@ -26,18 +26,59 @@ main {
     text-align: center;
 }
 
+p[data-body] {
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* ------------- HR -------------- */
+
 hr[data-hr] {
-    background-color: var(--clr-hr);
+    border: 2px solid var(--clr-hr);
     width: 90%;
-    
+    margin: 0 auto;
 }
 
 /* ------------- FOOTER -------------- */
 
+footer {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 300px));
+    justify-content: space-between;
+    grid-template-areas: 
+    "contact . bowl"
+    ". copyright .";
+}
+
+.contact-footer {
+    grid-area: contact;
+    margin-left: 15%;
+}
+
+.bowl-footer {
+    grid-area: bowl;
+    justify-self: end;
+    margin-right: 15%;
+}
+
+.copy-footer {
+    grid-area: copyright;
+    text-align: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 15px 0;
+}
+
 img[data-contact-icon] {
-    width: 55px;
+    width: 35px;
 }
 
 img[data-footer-bowl] {
     width: 150px;
+    /* transform: rotate(20deg); */
 }
