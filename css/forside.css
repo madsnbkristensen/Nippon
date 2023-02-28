@@ -35,7 +35,7 @@ body {
     background-color: var(--clr-bg);
 }
 
-/* ---------- HEADER ------------ */
+/* ---------- HEADER START ------------ */
 
 .logo-img {
   height: 65px;
@@ -87,19 +87,31 @@ body {
     font-style: normal;
 }
 
-/* ---------- HEADER ------------ */
+/* ---------- HEADER END ------------ */
+
+/* ---------- MAIN START ------------ */
 
 main {
     text-align: center;
+
+    /* TEST */
+
+    background-image: url(../img/form-texture-1x.png);
+    background-position: 0 400px;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
+/* ---------- MAIN END ------------ */
 
-/* ------------ GENEREL ------------ */
+/* ------------ GENEREL START ------------ */
 
 p[data-body], h1[data-h1-forside], h2[data-h2-forside] {
     width: 75%;
     margin: 30px auto;
 }
+
+/* ---------- GENEREL END ------------ */
 
 
 /*----------- SKJULT OVERLAY MÅLTID ----------------*/
@@ -119,7 +131,12 @@ div[data-overlay-maaltidskasse] {
 
 /* ------------OPSKRIFTER ----------- */
 
+article {
+  margin: 150px 0;
+}
+
 article[data-forside-opskrifter] {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, minmax(250px,700px));
     justify-content: center;
@@ -127,8 +144,6 @@ article[data-forside-opskrifter] {
     "opskriftOverskrift opskriftOverskrift"
     "opskriftBody opskriftImg"
     "opskriftBtn opskriftBtn";
-    background-image: url(../img/form-texture-1x.png);
-    background-size: (100% x 100%);
 }
 
 h2[data-h2-opskrifter] {
