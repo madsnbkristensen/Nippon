@@ -1,0 +1,211 @@
+.siden {
+    background-color: #f5f5f5;
+    font-family: "raleway", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    font-style: normal;
+    color: #413F45;
+    padding: 20px;
+    
+}
+
+.mix-wrapper {
+    margin: 50px 100px;
+    padding: 50px 120px 150px 120px;
+    background-color: #ffffff;
+    border-radius: 35px;
+    box-shadow: 1px 1px 20px 10px lightgrey;
+}
+
+.overskrift {
+    text-align: center;
+    margin: 40px 40px;
+}
+
+.overskrift h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.overskrift p {
+    line-height: 24px;
+}
+
+.retter {
+    display: grid;
+    justify-content: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 80px;
+    margin-bottom: 130px;
+    grid-template-columns: repeat(3, 350px);
+}
+
+.retter h6 {
+    font-size: 17px;
+    margin-top: -5px;
+}
+
+.retter p {
+    font-size: 16px;
+    margin-top: -30px;
+    line-height: 25px;
+}
+
+.retter a {
+    text-decoration: none;
+    background-color: #413F45;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 5px 30px;
+    box-shadow: 1px 1px 15px 2px lightgrey;
+    font-size: 18px;
+}
+
+.ret-2 a:hover {
+    font-size: 19px;
+}
+
+.ret-1 {
+    grid-column-start: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ret-1 h6 {
+    margin-left: -70px;
+}
+
+.ret-1 p {
+    margin-left: -20px;
+}
+
+.ret-2 {
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.ret-2 h6 {
+    margin-left: -20px;
+}
+
+.ret-2 p {
+    margin-left: -15px;
+}
+
+.ret-3 {
+    grid-column-start: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ret-3 h6 {
+    margin-left: -110px;
+}
+
+.ret-3 p {
+    margin-left: 33px;
+}
+
+.mad {
+    width: 400px;
+}
+
+
+/* Bestil */
+.bestil {
+    text-align: center;
+}
+
+.bestil h3 {
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.knap {
+    display: flex;
+    justify-content:center;
+}
+
+#pers1 {
+    background-color: #fff;
+    color: #413F45;
+    border-radius: 15px 0px 0px 15px;
+    padding: 10px;
+    padding-left: 15px;
+    box-shadow:1px 1px 10px lightgrey;
+}
+
+#pers2 {
+    background-color: #413F45;
+    color: #ffff;
+    box-shadow:1px 1px 10px lightgrey;
+    border-radius: 0px 15px 15px 0px;
+    padding: 10px 8px 10px 4px;
+}
+
+.streg {
+    border-left: 2px solid #BD1622;
+    height: 350px;
+    position: absolute;
+    left: 50%;
+    margin-left: -1px;
+    margin-top: 50px;
+}
+
+.valg {
+    display: flex;
+    margin-top: 55px;
+}
+
+.valg > div {
+    width: 50%;
+}
+
+.engangs {
+    margin-right: 70px;
+}
+
+.abonnement {
+    margin-left: 70px;
+}
+
+.engangs , .abonnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.valg h3 {
+    margin-bottom: 10px;
+}
+
+.valg b {
+    color: #BD1622;
+    text-decoration-line: underline;
+}
+
+.valg h6 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.koeb {
+    background-color: #413F45;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 1px 1px 15px 2px lightgrey;
+    font-size: 18px;
+    margin-top: -15px;
+    width: 20%;
+}
+
+.koeb:hover {
+    font-size: 19px;
+}
