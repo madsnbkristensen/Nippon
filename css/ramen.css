@@ -1,0 +1,71 @@
+.siden {
+    background-color: #f5f5f5;
+    font-family: "raleway", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    font-style: normal;
+    color: #413F45;
+    padding: 20px;
+    
+}
+
+.opskrift-wrapper {
+    margin: 50px 100px;
+    padding: 50px 120px;
+    background-color: #ffffff;
+    border-radius: 35px;
+    box-shadow: 1px 1px 20px 10px lightgrey;
+}
+
+.overskrift {
+    text-align: center;
+    margin: 40px 40px;
+}
+
+.overskrift h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.overskrift p {
+    line-height: 24px;
+}
+
+.ingredienser h3 {
+    font-size: 27px;
+}
+
+ .ingredienser h6 {
+    font-size: 17px;
+    margin: 0px 0px -15px 0px;
+ }
+
+ .ingredienser li{
+    list-style-type: none;
+    margin-left: -40px;
+    padding-top: 6px;
+ }
+
+aside {
+    width: 70%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+}
+
+aside h6 {
+    float: right;
+    font-size: 17px;
+}
+
+#ramen-kylling {
+    width: 90%;
+    border: solid lightgrey 1px;
+    float: right;
+    margin-top: -20px;
+}
+
+.fremgang h3 {
+    font-size: 27px;
+    margin-top: 70px;
+}
