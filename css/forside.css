@@ -73,7 +73,7 @@ article[data-forside-opskrifter] {
     "opskriftOverskrift opskriftOverskrift"
     "opskriftBody opskriftImg"
     "opskriftBtn opskriftBtn";
-    background-image: url(../img/form-texture.png);
+    background-image: url(../img/form-texture-1x.png);
 }
 
 h2[data-h2-opskrifter] {
