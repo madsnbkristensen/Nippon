@@ -17,6 +17,7 @@
     box-shadow: 1px 1px 20px 10px lightgrey;
 }
 
+
 .luk img {
     width: 8%;
     float: right;
@@ -81,11 +82,11 @@
 }
 
 .ret-1 h6 {
-    margin-left: -70px;
+    margin-left: -140px;
 }
 
 .ret-1 p {
-    margin-left: -20px;
+    margin-left: -30px;
 }
 
 .ret-2 {
@@ -112,11 +113,11 @@
 }
 
 .ret-3 h6 {
-    margin-left: -110px;
+    margin-left: -125px;
 }
 
 .ret-3 p {
-    margin-left: 33px;
+    margin-left: -25px;
 }
 
 .mad {
@@ -154,10 +155,6 @@
     box-shadow:1px 1px 10px lightgrey;
     border-radius: 0px 15px 15px 0px;
     padding: 10px 8px 10px 4px;
-}
-
-#pers1:hover, #pers2:hover {
-    cursor: pointer;
 }
 
 .streg {

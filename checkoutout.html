@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="css/checkoutout.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zyx7njv.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>  
+        <div class="top-nav">
+            <div> <a href="index.html"> <img class="logo-img" src="img/logonippon.png" alt="skålmednudlersomlogo"></a> </div> 
+        <div class="navbar">
+        <button class="button" href="#"> MÅLTIDSKASSER</button>
+        </div>
+        
+        <div class="navbar">
+        <button class="button" href="#"> OPSKRIFTER</button>
+        </div>
+        
+        <div class="navbar">
+        <button class="button" href="#"> OM NIPPON</button>
+        </div>
+        <div> <a href="#"> <img class="button" src="img/profil.png"></a> </div> 
+        </div>
+    </header> 
+    <div class="wrapper">
+        <div class="popupkasse">
+    <div class="checkout-subscribe-wrap">
+        <h2 class="overskrift">Dine oplysninger</h2>
+        <div class="bruger-oplysning">
+            
+            <hr data-hr>
+         
+
+
+            <input class="customer-email" type="email" placeholder="email" id="username-input">
+            <input class="customer-password" placeholder="password" type="password" id="password-input">
+            <div class="opret-login btn">
+                <button><a href="./opret.html">Opret</a></button>
+                <button type="submit" onclick="loginFunc()">Login</button>
+            </div>
+            <input class="customer-name" type="text" placeholder="navn">
+            <input class="customer-adress" type="text" placeholder="adresse">
+        </div>
+        <div class="kort-oplysning">
+            <label>Betaling</label>
+            <select name="kort" id="select-card">
+                <option value="Option 1">Mastercard</option>
+                <option value="Option 2">Visa</option>
+                <option value="Option 3">Dankort</option>
+                <option value="Option 4">Paypal</option>
+            </select>
+            <label>Kortnummer</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="xxxx xxxx xxxx xxxx">
+            <input type="text" id="cvv" name="cvv" placeholder="123">
+            <input type="text" id="expire" name="expdate" placeholder="01 / 01">
+        </div>
+        <button class="buy-btn">Køb</button>
+    </div>
+
+    <script src="./script/login.js"></script>
+  
+<div class="vl"></div>
+   <div> 
+    <img class="img-k" src="img/koed.png" alt="">
+    </div>
+    </div>
+        </div>
+
+</body>
+</html>
