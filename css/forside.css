@@ -28,28 +28,28 @@
     letter-spacing: var(--ls-general);
     line-height: var(--lh-generel);
     color: var(--clr-text);
+    text-decoration: none;
+    font-family: var(--ff-family);
 }
 
 body {
-    font-family: var(--ff-family);
     background-color: var(--clr-bg);
 }
 
-/* ---------- HEADER ------------ */
+/* ---------- HEADER + NAVBAR START ------------ */
 
 .logo-img {
   height: 65px;
-  margin-top: 25px;
 }
 
 .top-nav{
   display: grid;
-  grid-template-columns: 250px 250px 250px 250px 250px 35px 35px 35px;
-  justify-content: center;
-  justify-items: center;
+  grid-template-columns: repeat(5, 150px);
+  justify-content: space-around;
+  align-items: center;
   grid-gap: 10px;
-  height: 80px;
-  text-align:left;
+  height: 100px;
+  text-align:center;
   font-family: "raleway", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -72,14 +72,16 @@ body {
 
 .button:hover {
   background-color: #e6dcbf;
+  border-radius: 35px;
+  cursor: pointer;
 }
 
 
 .button {
     color: #413f45;
-    padding: 16px;
+    padding: 0 8px;
     font-size: 16px;
-    height: 80px;
+    height: 50px;
     border: none;
     background-color:#f5f5f5 ;
     font-family: "raleway", sans-serif;
@@ -87,19 +89,39 @@ body {
     font-style: normal;
 }
 
-/* ---------- HEADER ------------ */
+div[data-hero-wrapper] {
+  filter: opacity(50%);
+}
+
+img[data-hero-img] {
+  width: 100%;
+}
+
+/* ---------- HEADER + NAVBAR END ------------ */
+
+/* ---------- MAIN START ------------ */
 
 main {
     text-align: center;
+
+    /* TEST */
+
+    /* background-image: url(../img/form-texture-1x.png);
+    background-position: 0 400px;
+    background-size: 100%;
+    background-repeat: no-repeat; */
 }
 
+/* ---------- MAIN END ------------ */
 
-/* ------------ GENEREL ------------ */
+/* ------------ GENEREL START ------------ */
 
 p[data-body], h1[data-h1-forside], h2[data-h2-forside] {
     width: 75%;
     margin: 30px auto;
 }
+
+/* ---------- GENEREL END ------------ */
 
 
 /*----------- SKJULT OVERLAY MÅLTID ----------------*/
@@ -119,7 +141,12 @@ div[data-overlay-maaltidskasse] {
 
 /* ------------OPSKRIFTER ----------- */
 
+article {
+  margin: 150px 0;
+}
+
 article[data-forside-opskrifter] {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, minmax(250px,700px));
     justify-content: center;
@@ -127,8 +154,6 @@ article[data-forside-opskrifter] {
     "opskriftOverskrift opskriftOverskrift"
     "opskriftBody opskriftImg"
     "opskriftBtn opskriftBtn";
-    background-image: url(../img/form-texture-1x.png);
-    background-size: (100% x 100%);
 }
 
 h2[data-h2-opskrifter] {
@@ -143,14 +168,14 @@ p[data-p-opskrift] {
 }
 
 img[data-forside-ramen] {
-    width: 350px;
+    width: 400px;
     transform: rotate(180deg);
     clip-path: circle(50% at 50% 50%);
     grid-area: opskriftImg;
     justify-self: center;
 }
 
-div[data-btn-opskrift] {
+a[data-btn-opskrift] {
     grid-area: opskriftBtn;
 }
 
@@ -172,7 +197,7 @@ div[data-overlay-opskrifter] {
 /* ------------- INFOGRAPHIC ------------- */
 
 img[data-infographic-forside] {
-    width: 60%;
+    width: 50%;
     margin: 40px 0;
 }
 
@@ -230,7 +255,7 @@ img[data-footer-bowl] {
 
 /* ------------------ BUTTON STYLING --------------------*/
 
-div[data-btn] {
+/* div[data-btn] {
     width: 200px;
     padding: 5px 20px;
     border-radius: 35px;
@@ -244,6 +269,24 @@ div[data-btn] {
 
 div[data-btn]:hover {
     cursor:pointer;
+} */
+
+a[data-btn] {
+  display: block;
+  width: 200px;
+  padding: 5px 20px;
+  border-radius: 35px;
+  background-color: #413F45;
+  color: white;
+  margin: 100px auto;
+  font-size: 20px;
+  border: none;
+  box-shadow: 10px black;
+}
+
+a[data-btn]:hover {
+  /* Behøver ikke en cursor property da det nu er et <a> tag og ikke en div, den kunne måske godt skifte farve ved hover */
+  cursor:pointer;
 }
 
 
