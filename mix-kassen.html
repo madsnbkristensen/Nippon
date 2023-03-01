@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/mix.css">
     <link rel="stylesheet" href="https://use.typekit.net/ukm6yos.css">
-    <script src="script/bestil.js" defer></script>
+    <script src="script/bestil-mix.js" defer></script>
 </head>
 <body>
    <div class="siden">
@@ -47,8 +47,8 @@
             <section class="bestil">
                 <h3>Bestil Mix-Kassen</h3>
                 <div class="knap">
-                    <div id="pers1">1 Person</div>
-                    <div id="pers2">2 Personer</div>
+                    <div onclick="enPersonValgt()" id="pers1">1 Person</div>
+                    <div onclick="toPersonerValgt()" id="pers2">2 Personer</div>
                 </div>
                 <div class="streg"></div>
                 <div class="valg">
@@ -59,7 +59,7 @@
                             Så er engangskassen en oplagt mulighed for dig.
                             Her kan du prøve tre forskellige japanske retter uden at binde dig til noget.
                         </p>
-                        <h6>489 kr</h6>
+                        <h6 id="engangspris">489 kr</h6>
                         <div class="koeb">Køb</div>
                     </div>
                     <div class="abonnement">
@@ -69,7 +69,7 @@
                             Udover at du ikke skal tænke på at bestille fra uge til uge, så får du også <b>15% rabat</b> på hver kasse.
                             Afmeld senest onsdag, for at du ikke modtager næste uges kasse.
                         </p>
-                        <h6>415 kr</h6>
+                        <h6 id="abonnementspris">415 kr</h6>
                         <div class="koeb">Køb</div>
                     </div>
                 </div>

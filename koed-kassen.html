@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/koed.css">
     <link rel="stylesheet" href="https://use.typekit.net/ukm6yos.css">
+    <script src="script/bestil-koed.js"></script>
 </head>
 <body>
    <div class="siden">
@@ -45,8 +46,8 @@
             <section class="bestil">
                 <h3>Bestil Kød-Kassen</h3>
                 <div class="knap">
-                    <div id="pers1">1 Person</div>
-                    <div id="pers2">2 Personer</div>
+                    <div onclick="enPersonValgt1()" id="pers1">1 Person</div>
+                    <div onclick="toPersonerValgt1()" id="pers2">2 Personer</div>
                 </div>
                 <div class="streg"></div>
                 <div class="valg">
@@ -57,7 +58,7 @@
                             Så er engangskassen en oplagt mulighed for dig.
                             Her kan du prøve tre forskellige japanske retter uden at binde dig til noget.
                         </p>
-                        <h6>509 kr</h6>
+                        <h6 id="engangspris">509 kr</h6>
                         <div class="koeb">Køb</div>
                     </div>
                     <div class="abonnement">
@@ -67,7 +68,7 @@
                             Udover at du ikke skal tænke på at bestille fra uge til uge, så får du også <b>15% rabat</b> på hver kasse.
                             Afmeld senest onsdag, for at du ikke modtager næste uges kasse.
                         </p>
-                        <h6>432 kr</h6>
+                        <h6 id="abonnementspris">432 kr</h6>
                         <div class="koeb">Køb</div>
                     </div>
                 </div>

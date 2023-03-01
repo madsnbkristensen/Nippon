@@ -157,6 +157,10 @@
     padding: 10px 8px 10px 4px;
 }
 
+#pers1:hover, #pers2:hover {
+    cursor: pointer;
+}
+
 .streg {
     border-left: 2px solid #BD1622;
     height: 350px;
