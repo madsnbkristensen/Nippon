@@ -49,29 +49,30 @@
 
     <div data-outer-wrapper-main>
 
-        <div class="header-wrapper">
+        <div class="title-btn-filter-wrapper"> <!-- TITLE WRAPPER START -->
+
             <h1>Opskrifter</h1>
             <p>Se alle vores opskrifter herunder, og find inspiration til dit næste måltid.</p>
-        </div>
 
-        <div class="search-wrapper">
-            <!-- <label for="search">Søg opskrifter</label> -->
-            <input type="search" id="search" placeholder="Søg" data-search>
-        </div>
+            <div class="search-wrapper">
+                <!-- <label for="search">Søg opskrifter</label> -->
+                <input type="search" id="search" placeholder="Søg" data-search>
+            </div>
 
-        <div class="btn-wrapper">
-            <div class="btn" id="filter-meat" data-filter-meat data-filter-btn>Kød</div>
-            <div class="btn" id="filter-vegetarian" data-filter-vegetarian data-filter-btn>Vegetar</div>
-            <div class="btn" id="filter-vegan" data-filter-vegan data-filter-btn>Vegansk</div>
-            <div class="btn" id="filter-pescetarian" data-filter-pescetarian data-filter-btn>Pescetar</div>
-        </div>
+            <div class="btn-wrapper">
+                <div class="btn" id="filter-meat" data-filter-meat data-filter-btn>Kød</div>
+                <div class="btn" id="filter-vegetarian" data-filter-vegetarian data-filter-btn>Vegetar</div>
+                <div class="btn" id="filter-vegan" data-filter-vegan data-filter-btn>Vegansk</div>
+                <div class="btn" id="filter-pescetarian" data-filter-pescetarian data-filter-btn>Pescetar</div>
+            </div>
+
+        </div> <!-- TITLE WRAPPER END -->
 
         <div class="user-cards" data-opskrift-cards-container></div>
 
         <template data-opskrift-template>
             <div class="card">
-                <img src="" alt="" data-opskrift-card-image>
-                <div data-opskrift-card-text-btn-wrapper>
+                <div data-opskrift-card-filter>
                     <h2 data-opskrift-card-header></h2>
                     <div data-opskrift-card-btn>Se opskrift</div>
                 </div>
