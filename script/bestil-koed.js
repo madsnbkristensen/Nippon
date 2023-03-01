@@ -1,28 +1,26 @@
-var knapEnPerson1 = document.getElementById("pers1");
+var knapEnPerson = document.querySelector('#pers1')
 
-var knapToPersoner2 = document.getElementById("pers2");
+var knapToPersoner = document.querySelector('#pers2')
 
-var prisEngangs = document.getElementById("engangspris");
+var prisEngangs = document.getElementById("engangspris")
 
-var prisAbonnement = document.getElementById("abonnementspris");
+var prisAbonnement = document.querySelector('#abonnementspris')
 
 function enPersonValgt1() {
-    console.log("test1");
-    knapEnPerson1.style.backgroundColor = "#413f45";
-    knapEnPerson1.style.color = "#ffffff";
-    knapToPersoner2.style.backgroundColor = "#ffff";
-    knapToPersoner2.style.color = "#413f45";
+    knapEnPerson.style.backgroundColor = "#413F45";
+    knapEnPerson.style.color = "#ffffff";
+    knapToPersoner.style.backgroundColor = "#ffff";
+    knapToPersoner.style.color = "#413f45";
     prisEngangs.innerText = "409 kr";
-    prisAbonnement.innerText = "347 kr";
+    prisAbonnement.innerText = "347 kr"
 
 }
 
 function toPersonerValgt1() {
-    console.log("test2");
-    knapEnPerson1.style.backgroundColor = "#ffff";
-    knapEnPerson1.style.color = "#413f45";
-    knapToPersoner2.style.backgroundColor = "#413f45";
-    knapToPersoner2.style.color = "#ffff";
+    knapEnPerson.style.backgroundColor = "#ffff";
+    knapEnPerson.style.color = "#413f45";
+    knapToPersoner.style.backgroundColor = "#413f45";
+    knapToPersoner.style.color = "#ffff";
     prisEngangs.innerText = "509 kr";
-    prisAbonnement.innerText = "432 kr";
+    prisAbonnement.innerText = "432 kr"
 }
