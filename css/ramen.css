@@ -17,6 +17,13 @@
     box-shadow: 1px 1px 20px 10px lightgrey;
 }
 
+.tilbage img {
+    width: 8%;
+    float: left;
+    margin-left: -80px;
+    margin-top: -10px;
+}
+
 .overskrift {
     text-align: center;
     margin: 40px 40px;
