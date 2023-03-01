@@ -19,22 +19,27 @@ html
         justify-content: center;
         margin-top: 5%;
         background-image: url(../img/form-texture-1x.png);
+      
     }
 
     .popupkasse
     {
         box-sizing: content-box;
-        width: 900px;
+        width: 1000px;
         border-radius: 10px;
-        margin:;
         box-shadow:5px 5px 5px 5px lightgrey;
         background-color: #fff;
+        display:flex;
+        margin-bottom: 100px;
         
     }
 
     .img-k 
     {
-         width: 500px;
+         width: 400px;
+         margin-top: 20px;
+         padding-right: 30px;
+         
     }
 
 /*----------opsætning checkout---------*/
@@ -76,4 +81,5 @@ border-radius: 15px;
 width: 100px;
 background-color: #413f45;
 color: #fff;
+margin-bottom: 60px;
 }
