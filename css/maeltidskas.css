@@ -14,10 +14,9 @@ html
     .text-box
     {
         text-align: center;
-        padding-left:;
-        padding-right: ;
         font-size: 50px;
-        margin: 5%;
+        margin-top: 20px;
+        margin-bottom: 40px;
 
 
         font-family: "raleway", sans-serif;
@@ -30,8 +29,8 @@ html
         text-align: center;
         padding-left: 20%;
         padding-right: 20%;
-        font-size:16px;
-
+        font-size:18px;
+        line-height: 25px;
     }
 
 
@@ -40,8 +39,8 @@ html
         display: grid;
         grid-template-columns: repeat(3, minmax(150px, 350px));
         justify-content: center;
-        margin-top: 5%;
-      
+        margin-top: 20px;
+        text-align: center;
         background-image: url(../img/form-texture-1x.png);
     }
     
@@ -53,47 +52,48 @@ html
         padding-left: 5%;
         padding-right: 5%;
         justify-self:center;
-        margin: 15%;
-    
-        box-shadow:5px 5px 5px 5px lightgrey;
+        margin: 20px 20px 40px 20px;
+        box-shadow:1px 1px 10px 1px lightgrey;
         background-color: #fff;
-        perspective: 1000px;
+        /* perspective: 1000px; */
         height: 500px;
     }
 
+    .kasse h3 {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+
+    .kasse h4 {
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
+
     .img-kasse {
-         width: 300px;
+    width: 300px;
     padding-left: 20%;
     padding-right: 20%;
-    margin-top: 25%;
+    margin-top: 40px;
     }
 
-    .h3 {
-        text-align: center;
-
-    }
-    .p {
-        text-align: center;
-        justify-content: center;
-        padding-left: 20%;
-        padding-right: 20%;
-
-    }
-
-    .h4 {
-        padding-left: 20px;
-        padding-right: 20px;
-        text-align: center;
+    .kasse img {
+        height: 210px;
     }
 
     .btn {
-  padding-left: 20px;
-  padding-right: 20px;
- background-color: #413f45;
-  box-shadow: 5px 5px 5px lightgray;
-  width: 70px;
-  border-radius: 10px;
+        margin: 20px 50px 0px 50px;
+    padding: 5px;
 
+  background-color: #413f45;
+  box-shadow: 1px 1px 5px lightgray;
+  border-radius: 20px;
+
+}
+
+.btn:hover{
+    cursor: pointer;
 }
 
 .knaptext {

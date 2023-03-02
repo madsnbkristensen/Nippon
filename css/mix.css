@@ -1,27 +1,38 @@
-.siden {
-    background-color: #f5f5f5;
-    font-family: "raleway", sans-serif;
-    font-weight: 400;
-    font-size: 17px;
-    font-style: normal;
-    color: #413F45;
+#overlay {
+    position: fixed;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
     padding: 20px;
-    
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px #ccc;
+    z-index: 9999;
+    display: none;
+    width: 90%;
+    max-width: 90%;
+    max-height: 100%;
+    overflow-y: auto;
+    border-radius: 35px;
 }
 
 .mix-wrapper {
-    margin: 50px 100px;
+    margin: 50px 100px 100px 100px;
     padding: 50px 120px 150px 120px;
     background-color: #ffffff;
     border-radius: 35px;
-    box-shadow: 1px 1px 20px 10px lightgrey;
 }
 
 .luk img {
-    width: 8%;
+    width: 90px;
+    height: auto;
     float: right;
-    margin-right: -80px;
-    margin-top: -10px;
+    margin-right: -200px;
+    margin-top: -80px;
+}
+
+.luk:hover {
+    cursor: pointer;
 }
 
 .overskrift {
@@ -30,12 +41,13 @@
 }
 
 .overskrift h1 {
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 35px;
+    margin-bottom: 30px;
 }
 
 .overskrift p {
-    line-height: 24px;
+    line-height: 26px;
+    font-size: 18px;
 }
 
 .retter {
@@ -49,14 +61,15 @@
 }
 
 .retter h6 {
-    font-size: 17px;
+    font-size: 18px;
     margin-top: -5px;
 }
 
 .retter p {
     font-size: 16px;
-    margin-top: -30px;
-    line-height: 25px;
+    line-height: 23px;
+    margin-top: 8px;
+    text-align: left;
 }
 
 .retter a {
@@ -67,6 +80,7 @@
     padding: 5px 30px;
     box-shadow: 1px 1px 15px 2px lightgrey;
     font-size: 18px;
+    margin-top: 10px;
 }
 
 .ret-2 a:hover {
@@ -85,7 +99,7 @@
 }
 
 .ret-1 p {
-    margin-left: -20px;
+    margin-left: -22px;
 }
 
 .ret-2 {
@@ -101,7 +115,7 @@
 }
 
 .ret-2 p {
-    margin-left: -15px;
+    margin-left: -20px;
 }
 
 .ret-3 {
@@ -116,7 +130,7 @@
 }
 
 .ret-3 p {
-    margin-left: 33px;
+    margin-left: 31px;
 }
 
 .mad {
@@ -213,7 +227,7 @@
     padding: 5px;
     box-shadow: 1px 1px 15px 2px lightgrey;
     font-size: 18px;
-    margin-top: -15px;
+    margin-top: 15px;
     width: 20%;
 }
 
