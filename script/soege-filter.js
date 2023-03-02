@@ -85,18 +85,9 @@ const displayOpskrifter = arr => {
     opskrifter = arr.map(opskrift => {
         const card = opskriftCardTemplate.content.cloneNode(true).children[0]
         // her laver vi en variabel der repræsenterer de elementer vi skal bruge
-        // const image = card.querySelector("[data-opskrift-card-image]")
         const header = card.querySelector("[data-opskrift-card-header]")
-        // const button = card.querySelector("[data-opskrift-card-btn]")
         // her indsætter vi vores textcontent i de forskellige sektioner i vores card
-        // image.setAttribute("src", opskrift.image)
-
-        // TEST TIL BG-IMAGE
-        
         card.style.backgroundImage = `url(${opskrift.image})`
-
-        // TEST TIL BG-IMAGE
-
         header.textContent = opskrift.name
         // her "append'er" vi det card vi her har lavet til vores userCardContainer
         opskriftCardContainer.append(card)
@@ -106,4 +97,6 @@ const displayOpskrifter = arr => {
 }
 
 
+
 displayOpskrifter(opskriftArray)
+

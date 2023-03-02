@@ -120,7 +120,15 @@ body {
     display: flex;
     justify-content: center;
     gap: 2.5rem;
-    width: 80%;
+    width: 75%;
+}
+
+input[data-search] {
+    border-radius: 20px;
+    border: none;
+    height: 2rem;
+    width: 200px;
+    box-shadow: 0 3px 6px var(--clr-text);
 }
 
 
@@ -128,8 +136,8 @@ div[data-filter-btn] {
     width: 200px;
     padding: 5px 20px;
     border-radius: 35px;
-    background-color: #413F45;
-    color: white;
+    background-color: var(--clr-text);
+    color: var(--clr-bg);
     margin: 10px auto;
     font-size: 20px;
     box-shadow: 0px 3px 6px var(--clr-text);
@@ -141,29 +149,33 @@ div[data-filter-btn]:hover {
 }
 
 .active {
-    border: 2px solid var(--clr-hr);
+    background-color: var(--clr-bg);
+    color: var(--clr-text);
 }
 
 .user-cards {
-    width: 85%;
+    width: 75%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 300px);
     gap: 2.5rem;
     margin-top: 1rem;
-    margin: 1rem auto 0;
+    margin: 5rem auto;
 }
 
 .card {
-    /* border: 1px solid black; */
     background-color: white;
     border-radius: 20px;
     background-size: 500px;
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 0 3px 6px var(--clr-text);
+    transition: 1s ease;
 }
 
+.card:hover {
+    transform: scale(1.01);
+}
 
 div[data-opskrift-card-filter] {
     display: flex;
@@ -172,18 +184,14 @@ div[data-opskrift-card-filter] {
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255,255,255,.7);
     border-radius: 20px;
+    transition: 1s ease;
 }
 
-
-/* img[data-opskrift-card-image] {
-    width: 140%;
-    position: relative;
-    object-fit: cover;
-    object-position: 50% 50%;
-    filter: opacity(50%);
-} */
+div[data-opskrift-card-filter]:hover {
+    background-color: rgba(255,255,255,.5)
+}
 
 div[data-opskrift-card-text-btn-wrapper] {
     display: flex;
@@ -193,6 +201,7 @@ div[data-opskrift-card-text-btn-wrapper] {
 
 h2[data-opskrift-card-header] {
     text-align: center;
+    height: 3.5rem;
 }
 
 div[data-opskrift-card-btn] {
@@ -203,12 +212,17 @@ div[data-opskrift-card-btn] {
     background-color: #413F45;
     color: white;
     font-size: 20px;
-    box-shadow: 10px black;
+    box-shadow: 0 3px 6px var(--clr-text);
+}
+
+div[data-opskrift-card-btn]:hover {
+    cursor: pointer;
 }
 
 .hide {
     display: none;
 }
+
 
 
 /* ---------- MAIN END ------------ */
