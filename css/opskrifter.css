@@ -102,11 +102,8 @@ body {
 
 
 
-/* ---------- MAIN START ------------ */
+/* --------------------- MAIN START ------------------------ */
 
-/* div[data-outer-wrapper-main] {
-
-} */
 
 .title-btn-filter-wrapper {
     display: flex;
@@ -205,7 +202,6 @@ h2[data-opskrift-card-header] {
 }
 
 div[data-opskrift-card-btn] {
-    /* position: relative; */
     width: 150px;
     padding: 5px 20px;
     border-radius: 35px;
@@ -223,9 +219,143 @@ div[data-opskrift-card-btn]:hover {
     display: none;
 }
 
+/* ---- OVERLAYS START ---- */
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    /* height: 100%; */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    overflow: scroll;
+}
+
+/* #overlayramen {
+    position: fixed;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px #ccc;
+    z-index: 9999;
+    display: none;
+    width: 90%;
+    max-width: 90%;
+    max-height: 100%;
+    overflow-y: auto;
+    border-radius: 35px;
+} */
+
+.opskrift-wrapper {
+    position: absolute;
+    margin: 100px;
+    background-color: #ffffff;
+    border-radius: 35px;
+}
+
+.ramen {
+    row-gap: 3rem;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    'overskrift overskrift overskrift'
+    'ingredienser billede billede'
+    'fremgang fremgang fremgang';
+}
+
+.tilbage img {
+    width: 8%;
+    float: left;
+    margin-left: -120px;
+    margin-top: -10px;
+}
+
+.overskrift {
+    text-align: center;
+    grid-area: overskrift;
+}
+
+.overskrift h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    /* margin-top: -70px; */
+}
+
+.overskrift p {
+    line-height: 24px;
+}
+
+aside[data-img-antal] {
+    grid-area: billede;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.ingredienser {
+    grid-area: ingredienser;
+}
+
+.ingredienser h3 {
+    font-size: 27px;
+}
+
+ .ingredienser h6 {
+    font-size: 17px;
+    margin-top: 12px;
+ }
+
+ .ingredienser li{
+    list-style-type: none;
+    margin-left: 10px;
+    padding-top: 6px;
+ }
+
+/* aside {
+    width: 70%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+} */
+
+aside h6 {
+    float: right;
+    font-size: 17px;
+}
+
+#ramen-kylling {
+    width: 90%;
+    border: solid lightgrey 1px;
+    /* float: right; */
+    border-radius: 20px;
+}
+
+.fremgang {
+    grid-area: fremgang;
+}
+
+.fremgang h3 {
+    font-size: 27px;
+}
+
+.fremgang p {
+    line-height: 30px;
+    margin-top: 10px;
+}
 
 
-/* ---------- MAIN END ------------ */
+/* ---- OVERLAYS END ---- */
+
+
+
+/* -------------------------- MAIN END ------------------------ */
 
 
 
