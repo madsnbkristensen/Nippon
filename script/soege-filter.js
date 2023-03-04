@@ -1,3 +1,5 @@
+const background = document.querySelector('[data-overlay-kylling]')
+const body = document.querySelector('body')
 const opskriftCardTemplate = document.querySelector("[data-opskrift-template]")
 const opskriftCardContainer = document.querySelector("[data-opskrift-cards-container]")
 const searchInput = document.querySelector("[data-search]")
@@ -81,11 +83,29 @@ pescetarianFilter.addEventListener('click', () => {
 })
 
 
+
+
 const displayOpskrifter = arr => {
     opskrifter = arr.map(opskrift => {
         const card = opskriftCardTemplate.content.cloneNode(true).children[0]
         // her laver vi en variabel der repræsenterer de elementer vi skal bruge
         const header = card.querySelector("[data-opskrift-card-header]")
+        const btn = card.querySelector("[data-opskrift-card-btn]")
+
+        btn.addEventListener('click', () => {
+            console.log(`Det her er en opskrift på ${opskrift.name}.`)
+            background.classList.toggle('hide')
+            body.style.overflow = 'hidden'
+        })
+
+        background.addEventListener('click', () => {
+            if (!background.classList.contains('hide')) {
+                console.log('Der sker noget når man trykker på baggrunden')
+                background.classList.toggle('hide')
+                body.style.overflow = 'auto'
+            }
+        })
+
         // her indsætter vi vores textcontent i de forskellige sektioner i vores card
         card.style.backgroundImage = `url(${opskrift.image})`
         header.textContent = opskrift.name
@@ -95,8 +115,6 @@ const displayOpskrifter = arr => {
         return { image: opskrift.image , name: opskrift.name, type: opskrift.type, element: card }
     })
 }
-
-
 
 displayOpskrifter(opskriftArray)
 
