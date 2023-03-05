@@ -145,10 +145,9 @@ div[data-filter-btn]:hover {
  cursor: pointer;
 }
 
-.active {
-    background-color: var(--clr-bg);
-    color: var(--clr-text);
-}
+/* .active {
+    
+} */
 
 .user-cards {
     width: 75%;
