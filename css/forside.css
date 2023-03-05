@@ -38,11 +38,13 @@ body {
 
 /* ---------- HEADER + NAVBAR START ------------ */
 
-.logo-img {
-  height: 65px;
-}
+/* Nav med button elementer... start */
 
-.top-nav{
+/* .logo-img {
+  height: 65px;
+} */
+
+/* .top-nav{
   display: grid;
   grid-template-columns: repeat(5, 150px);
   justify-content: space-around;
@@ -53,31 +55,32 @@ body {
   font-family: "raleway", sans-serif;
   font-weight: 400;
   font-style: normal;
-}
+} */
 
-.top-nav a{
+/* .top-nav a{
   padding-top: 10px;
   transition: 0.4s;
   text-decoration: none;
   text-align:center;
   width: 100px;
-}
+} */
 
-.navbar {
+/* .navbar {
   color: #413f45;
   padding: 16px;
   font-size: 16px;
   border: none;
-}
+} */
 
-.button:hover {
+
+/* .button:hover {
   background-color: #e6dcbf;
   border-radius: 35px;
   cursor: pointer;
-}
+} */
 
 
-.button {
+/* .button {
     color: #413f45;
     padding: 0 8px;
     font-size: 16px;
@@ -87,7 +90,55 @@ body {
     font-family: "raleway", sans-serif;
     font-weight: 400;
     font-style: normal;
+} */
+
+/* Nav med button elementer... end */
+
+
+/* Ny navbar start */
+
+.top-nav {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  height: 80px;
 }
+
+.logo-wrapper,
+.logo-wrapper a,
+.login-wrapper,
+.login-wrapper a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-img {
+  width: 65px;
+}
+
+.login-icon {
+  width: 40px;
+  padding: 5px 10px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-link {
+  padding: 5px 8px;
+}
+
+.nav-link:hover,
+.login-icon:hover {
+  background-color: var(--clr-acc);
+  border-radius: 35px;
+}
+
+/* Ny navbar end */
+
 
 div[data-hero-wrapper] {
   filter: opacity(50%);
