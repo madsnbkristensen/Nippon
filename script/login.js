@@ -54,3 +54,11 @@ if (localStorage.length > 0) {
     customerAdress.value = localStorage.getItem("adress-opret")
     customerPassword.value = localStorage.getItem("password-opret")
 }
+
+function buyFunc() {
+    /*  if (document.querySelector("#ccnum").length > 0 & document.querySelector("#cvv").length > 0 & document.querySelector("#expire").length > 0 & document.querySelector(".customer-adress").length > 0 & document.querySelector(".customer-name").length > 0) { */
+    document.location.href = "lastone.html"
+    /* } else {
+        alert("Udfyld venligst alle felter")
+    } */
+}

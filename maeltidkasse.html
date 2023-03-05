@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
     <link rel="stylesheet" href="css/maeltidskas.css">
     <link rel="stylesheet" href="css/forside.css">
     <link rel="stylesheet" href="https://use.typekit.net/zyx7njv.css">
@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header>  
+    <header>
         <!-- <div class="top-nav">
             <div> <a href="index.html"> <img class="logo-img" src="img/logonippon.png" alt="skålmednudlersomlogo"></a> </div> 
         <div class="navbar">
@@ -57,34 +57,36 @@
 
         </div>
 
-    </header> 
-<main>
+    </header>
+    <main>
 
-    <section class="background-img"></section>
+        <section class="background-img"></section>
 
 
-</main>
+    </main>
 
-    <h1 class="text-box">    
-       Vores Måltidskasser
-    </h1> 
+    <h1 class="text-box">
+        Vores Måltidskasser
+    </h1>
 
     <section>
-    <h2 class="underskrift"> Oplev vores mange forskellige måltidskasser. Der findes både variationer tilvegetaren, 
-    kødelskeren og til alle dem imellem. Retterne i måltidskasserne ændres 
-    fra uge til uge, så der hele tiden er nye retter at prøve. </h2>
+        <h2 class="underskrift"> Oplev vores mange forskellige måltidskasser. Der findes både variationer tilvegetaren,
+            kødelskeren og til alle dem imellem. Retterne i måltidskasserne ændres
+            fra uge til uge, så der hele tiden er nye retter at prøve. </h2>
     </section>
 
     <div class="kasse-wrapper">
         <div class="kasse">
             <img class="img-kasse" src="img/vegetar.png" alt="">
             <h3>Vegetar</h3>
-            <p>Få tre lækre vegetarretter <br> 
+            <p>Få tre lækre vegetarretter <br>
                 fyldt med lækre <br>
                 grønsager og rig på smagen.
             </p>
             <h4>Fra 359 kr</h4>
-            <div class="btn"><p class="knaptext"> Se kasse </p></div>
+            <div class="btn">
+                <p class="knaptext"> Se kasse </p>
+            </div>
         </div>
         <div class="kasse">
             <img class="img-kasse" src="img/koed.png" alt="">
@@ -94,17 +96,23 @@
                 Her er smagen fra kødet i fokus.
             </p>
             <h4> <b>Fra 409 kr</b></h4>
-            <a href="koed-kassen.html"><div class="btn"><p class="knaptext"> Se kasse </p></div></a>
+            <a href="koed-kassen.html">
+                <div class="btn">
+                    <p class="knaptext"> Se kasse </p>
+                </div>
+            </a>
         </div>
-        
+
         <div class="kasse">
             <img class="img-kasse" src="img/mix.png" alt="">
             <h3>Mix</h3>
-            <p>I mix får du tre forskellige retter, <br> 
+            <p>I mix får du tre forskellige retter, <br>
                 hvor nogen er med kød og andre vegetariske.
             </p>
             <h4>Fra 389 kr</h4>
-            <div onclick="aabenKasse()" class="btn"><p class="knaptext"> Se kasse </p></div>
+            <div onclick="aabenKasse()" class="btn">
+                <p class="knaptext"> Se kasse </p>
+            </div>
         </div>
         <div class="kasse">
             <img class="img-kasse" src="img/budget.png" alt="">
@@ -113,34 +121,40 @@
                 der gerne vil prøve tre japanske <br>
                 retter til en skarp pris.</p>
             <h4>Fra 309 kr</h4>
-            <div class="btn"> <p class="knaptext"> Se kasse </p></div>
+            <div class="btn">
+                <p class="knaptext"> Se kasse </p>
+            </div>
         </div>
         <div class="kasse">
             <img class="img-kasse" src="img/bygselv.png" alt="">
             <h3>Byg selv</h3>
             <p>Hvis du selv vil sammensætte tre retter, <br>
-                så er det muligt med byg selv. <br> 
+                så er det muligt med byg selv. <br>
                 Prisen varierer alt efter indholdet.
             </p>
             <h4>Fra 389 kr</h4>
-            <div class="btn"><p class="knaptext"> Se kasse </p></div>
+            <div class="btn">
+                <p class="knaptext"> Se kasse </p>
+            </div>
         </div>
         <div class="kasse">
             <img class="img-kasse" src="img/deluxe.png" alt="">
             <h3>Deluxe</h3>
-            <p>Kan du lide at spise lidt ekstra godt mad <br> 
+            <p>Kan du lide at spise lidt ekstra godt mad <br>
                 så er deluxekassen noget for dig. <br>
                 Her får du tre luksuriøse retter.
             </p>
             <h4>Fra 429 kr</h4>
-            <div class="btn"><p class="knaptext">Se kasse</p></div>
+            <div class="btn">
+                <p class="knaptext">Se kasse</p>
+            </div>
         </div>
     </div>
-   
-      <!-------------------------- FOOTER -------------------------------->
 
-      <hr data-hr>
-      <footer>
+    <!-------------------------- FOOTER -------------------------------->
+
+    <hr data-hr>
+    <footer>
 
         <!-- Vores kontakt punkter i footeren -->
 
@@ -228,20 +242,23 @@
                             Her kan du prøve tre forskellige japanske retter uden at binde dig til noget.
                         </p>
                         <h6 id="engangspris">489 kr</h6>
-                        <a href="checkout.html" class="koeb">Køb</a> 
+                        <!-- Rettet fra checkout.html til checkoutout.html -->
+                        <a href="checkoutout.html" class="koeb">Køb</a>
                     </div>
                     <div class="abonnement">
                         <h3>Køb som abonnement</h3>
                         <p>
                             Hvis du gerne vil en japansk måltidskasse til døren hver uge, så er abonnement for dig.
-                            Udover at du ikke skal tænke på at bestille fra uge til uge, så får du også <b>15% rabat</b> på hver kasse.
+                            Udover at du ikke skal tænke på at bestille fra uge til uge, så får du også <b>15% rabat</b>
+                            på hver kasse.
                             Afmeld senest onsdag, for at du ikke modtager næste uges kasse.
                         </p>
                         <h6 id="abonnementspris">415 kr</h6>
-                        <a href="checkout.html" class="koeb">Køb</a>
+                        <!-- Rettet fra checkout.html til checkoutout.html -->
+                        <a href="checkoutout.html" class="koeb">Køb</a>
                     </div>
                 </div>
-            </section>  
+            </section>
         </div>
     </div>
 
@@ -252,16 +269,17 @@
             </section>
             <article class="ramen">
                 <section class="overskrift">
-                <h1>Ramen med kylling og grøntsager</h1>
-                <p>
-                    Ramen er en nem, lækker og krydret suppe med nudler, grøntsager, kylling og smilende æg. 
-                    Perfekt hverdagsmad da man kan tilføje de grøntsager man lige har i køleskabet.
-                </p>
+                    <h1>Ramen med kylling og grøntsager</h1>
+                    <p>
+                        Ramen er en nem, lækker og krydret suppe med nudler, grøntsager, kylling og smilende æg.
+                        Perfekt hverdagsmad da man kan tilføje de grøntsager man lige har i køleskabet.
+                    </p>
                 </section>
-                
+
                 <aside>
                     <h6>Opskrift til 2 personer</h6>
-                    <img src="/img/ramen-med-kylling-og-grøntsager.jpeg" alt="ramen-med-kylling-og-grøntsager" id="ramen-kylling">
+                    <img src="/img/ramen-med-kylling-og-grøntsager.jpeg" alt="ramen-med-kylling-og-grøntsager"
+                        id="ramen-kylling">
                 </aside>
                 <section class="ingredienser">
                     <h3>Ingredienser</h3>
@@ -300,7 +318,7 @@
                     <p>
                         Kom kyllingen i en skål, hæld sesamolie og soya ud over og sæt kyllingen på køl.
                         <br>
-                        Snit gulerødder, peberfrugt, spidskål, champignon, forårsløg, chili og hvidløg og 
+                        Snit gulerødder, peberfrugt, spidskål, champignon, forårsløg, chili og hvidløg og
                         sæt det til side.
                         <br>
                         Rist sesamfrø på en tør pande og sæt dem til side.
@@ -313,18 +331,19 @@
                         Steg kyllingen på en varm pande med olie i 7-8 minutter på hver side.
                         Skær kyllingen i tynde skiver. Rist champignonerne kort på samme pande efterfølgende.
                         <br>
-                        Kom grøntsagsbouillon og hvidløg i en gryde og lad det koge op. 
+                        Kom grøntsagsbouillon og hvidløg i en gryde og lad det koge op.
                         Tilføj østerssauce, fishsauce og soyasauce, og smag suppen til.
                         <br>
-                        Fordel nudler, grøntsager og kylling i en skål. 
+                        Fordel nudler, grøntsager og kylling i en skål.
                         Hæld suppen over og top den med smilende æg, forårsløg, chili og sesam.
                     </p>
                     <video src=""></video>
-                </section>   
+                </section>
             </article>
-            
-    
+
+
         </div>
     </div>
 </body>
+
 </html>
