@@ -10,21 +10,63 @@
 </head>
 
 <body>
-    <div class="checkout-subscribe-wrap">
-        <h2>Dine oplysninger</h2>
-        <div class="bruger-oplysning">
+    <header>
 
-
-            <input class="customer-email-opret" type="text" placeholder="email">
-            <input class="customer-password-opret" placeholder="password" type="text">
-            <input class="customer-name-opret" type="text" placeholder="navn">
-            <input class="customer-adress-opret" type="text" placeholder="adresse">
-            <input type="checkbox"> Jeg bekfræfter at Nippon må gemme mine data.
+        <!-- <div class="top-nav">
+            <div> <a href="index.html"> <img class="logo-img" src="img/logonippon.png" alt="skålmednudlersomlogo"></a> </div>
+        <div class="navbar">
+        <button class="button" href="#"> MÅLTIDSKASSER</button>
         </div>
+        
+        <div class="navbar">
+        <button class="button" href="#"> OPSKRIFTER</button>
+        </div>
+        
+        <div class="navbar">
+        <button class="button" href="#">OM NIPPON</button>
+        </div>
+        <div> <a href="#"> <img class="button" src="img/profil.png"></a> </div> 
+        </div> -->
 
-        <button onclick="opretFunc()" class="checkout-btn">Checkout</button>
+        <div class="top-nav">
+
+            <div class="logo-wrapper">
+                <a href="index.html">
+                    <img src="img/logonippon.png" class="logo-img" alt="">
+                </a>
+            </div>
+
+            <div class="nav-links">
+                <a href="maeltidkasse.html" class="nav-link">MÅLTIDSKASSER</a>
+                <a href="opskrifter.html" class="nav-link">OPSKRIFTER</a>
+                <a href="#" class="nav-link">OM NIPPON</a>
+            </div>
+
+            <div class="login-wrapper">
+                <a href="#">
+                    <img src="img/profil.png" class="login-icon" alt="">
+                </a>
+            </div>
+
+        </div>
+    </header>
+    <div class="background-img-wrap">
+        <div class="checkout-subscribe-wrap">
+            <h2>Dine oplysninger</h2>
+            <div class="bruger-oplysning">
 
 
+                <input class="customer-email-opret" type="text" placeholder="email">
+                <input class="customer-password-opret" placeholder="password" type="text">
+                <input class="customer-name-opret" type="text" placeholder="navn">
+                <input class="customer-adress-opret" type="text" placeholder="adresse">
+                <input type="checkbox"> Jeg bekfræfter at Nippon må gemme mine data.
+            </div>
+
+            <button onclick="opretFunc()" class="checkout-btn buy-btn">Checkout</button>
+
+
+        </div>
     </div>
 
 

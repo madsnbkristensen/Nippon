@@ -41,7 +41,7 @@ function opretFunc() {
     localStorage.setItem("adress-opret", customerAdressOpretValue)
     localStorage.setItem("password-opret", customerPasswordOpretValue)
 
-    window.location.href = "checkout.html"
+    window.location.href = "checkoutout.html"
 
 }
 
@@ -56,9 +56,9 @@ if (localStorage.length > 0) {
 }
 
 function buyFunc() {
-    /*  if (document.querySelector("#ccnum").length > 0 & document.querySelector("#cvv").length > 0 & document.querySelector("#expire").length > 0 & document.querySelector(".customer-adress").length > 0 & document.querySelector(".customer-name").length > 0) { */
-    document.location.href = "lastone.html"
-    /* } else {
+    if (document.querySelector("#ccnum").value.length > 0 & document.querySelector("#cvv").value.length > 0 & document.querySelector("#expire").value.length > 0 & document.querySelector(".customer-adress").value.length > 0 & document.querySelector(".customer-name").value.length > 0) {
+        document.location.href = "lastone.html"
+    } else {
         alert("Udfyld venligst alle felter")
-    } */
+    }
 }
